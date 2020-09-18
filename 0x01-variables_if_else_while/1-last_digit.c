@@ -5,6 +5,7 @@
 /**
 *main-Prints the last number and compares it to 0 and 5
 *n:number to be checked
+*
 *x:last digit of n
 *Return:return 0 at the end
 */
