@@ -2,8 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /*
- *Prints whether the number is positive or negative
- */
+*main-Print number status,if the number is negative,positive or equal to 0
+*n:number to be checked
+*
+*Return:return 0 at the end
+*/
 int main(void)
 {
 	int n;
