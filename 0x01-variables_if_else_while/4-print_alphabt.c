@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
-* main- Prints alphaletters in lowercase
+* main- Prints alphaletters in lowercase except q and e
 * i-variable for ASCII equivalent for the letters
 *
+* main return value-returns a value of zero
 * Return-returns a value of zero
 */
 int main(void)
@@ -14,6 +15,6 @@ int main(void)
 	if (i != 'q' && i != 'e')
 		putchar(i);
 }
-	printf("\n");
+	putchar('\n');
 	return (0);
 }

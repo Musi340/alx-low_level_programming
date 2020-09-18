@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main- Prints base 10 single digit numbers
+* main- Prints base 16 numbers in lowercase
 * i-variable for ASCII equivalent for the letters
 *
 * main return value-returns a value of zero
@@ -12,8 +12,12 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 {
-	printf("%d", i);
+	putchar(i);
 }
-	printf("\n");
+	for (i = 'a'; i < 'g'; i++)
+{
+	putchar(i);
+}
+	printf('\n');
 	return (0);
 }
