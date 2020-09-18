@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
 *main-Print number status,if the number is negative,positive or equal to 0
 *n:number to be checked
 *
