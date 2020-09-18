@@ -1,0 +1,23 @@
+#include <stdio.h>
+/**
+* main- Prints alphaletters in lowercase
+* i-variable for ASCII equivalent for the letters
+*
+* Return-returns a value of zero
+*/
+int main(void)
+{
+	int i;
+	int c;
+
+	for (i = 'a'; i <= 'z'; i++)
+	{
+	putchar(i);
+}
+	for (c = 'A'; c <= 'Z'; c++)
+{
+	putchar(c);
+}
+	printf("\n");
+	return (0);
+}
