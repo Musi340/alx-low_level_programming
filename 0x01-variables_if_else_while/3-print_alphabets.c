@@ -5,7 +5,7 @@
 *i-variable for ASCII equivalent for the lowercase letters
 *
 *main return value- returns zero if program is successful
-*Return-returns a value of zero
+*Return:returns a value of zero
 */
 int main(void)
 {
