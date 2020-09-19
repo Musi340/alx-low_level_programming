@@ -6,7 +6,7 @@
 *long int- long integer data type
 *long long int- long long integer data type
 *
-*Return- returns a value zero
+*Return:returns a value zero
 */
 int main(void)
 {
