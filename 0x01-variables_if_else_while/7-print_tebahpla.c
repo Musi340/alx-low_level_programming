@@ -4,7 +4,7 @@
 * i-variable for ASCII equivalent for the letters
 *
 * main return value-returns a value of zero if successful
-* Return-returns a value of zero
+*Return:returns a value of zero
 */
 int main(void)
 {
