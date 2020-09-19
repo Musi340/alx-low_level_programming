@@ -2,7 +2,7 @@
 /**
 *main- printing a string using print
 *printf-in-built function to print strings
-*Return-returns a value zero after successful execution
+*Return:returns a value zero after successful execution
 */
 int main(void)
 {
