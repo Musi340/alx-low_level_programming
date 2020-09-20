@@ -4,27 +4,24 @@
 * i-variable for ASCII equivalent for the letters
 *
 * main return value-returns a value of zero
-* Return-returns a value of zero
+*Return:returns a value of zero
 */
 int main(void)
 {
 	int i;
-	int a;
-	int c;
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 100; i++)
 {
-	putchar(i);
-}
-	for (c = 49; c < 58; i++)
+	if (i < 10)
+	putchar(i % 10 + '0');
+	else
 {
-	for (a = 48; a < 58; i++)
-{
-	putchar(c);
-	putchar(a);	
-}
-}	
+	putchar(i % 10 + '0');
+	putchar(i % 10 + '0');
 	putchar(',');
+	putchar(' ');
+}
+}
 
 putchar('\n');
 return (0);

@@ -4,7 +4,7 @@
 * i-variable for ASCII equivalent for the letters
 *
 * main return value-returns a value of zero
-* Return-returns a value of zero
+*Return:returns a value of zero
 */
 int main(void)
 {
@@ -12,8 +12,8 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 {
-	putchar(0);
-	putchar(i);
+	putchar(i / 10 + '0');
+	putchar(i % 10 + '0');
 	putchar(',');
 	putchar(' ');
 }
