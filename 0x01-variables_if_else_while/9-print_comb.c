@@ -9,13 +9,23 @@
 int main(void)
 {
 	int i;
+	int a;
+	int c;
 
-	for (i = 0; i < 100; i++)
+	for (i = 48; i < 58; i++)
 {
 	putchar(i);
-	putchar(',');
-	putchar(' ');
 }
-	putchar('\n');
-	return (0);
+	for (c = 49; c < 58; i++)
+{
+	for (a = 48; a < 58; i++)
+{
+	putchar(c);
+	putchar(a);	
+}
+}	
+	putchar(',');
+
+putchar('\n');
+return (0);
 }
