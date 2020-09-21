@@ -9,8 +9,10 @@
 */
 int main(void)
 {
-	char c = "Holberton";
+	char c[10] = "Holberton";
+	int i;
 
-	_putchar(c);
+	for (i = 0; i < c[10]; i++)
+	_putchar(c[i]);
 	return (0);
 }
