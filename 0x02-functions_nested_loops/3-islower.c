@@ -4,7 +4,6 @@
  *
  * Return: Always 0.
  */
-int _islower(int c);
 int main(void)
 {
 	int r;
@@ -18,10 +17,17 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+/**
+ *  _islower - checks for the letters of the alphabet in lowercase
+ * @c: represents ascii value of characters
+ *
+ *Return: 1 is lowercase letter and 0 if not
+ */
 int _islower(int c)
 {
 	int result;
-	if (c >= 97 && c<= 122)
+
+	if (c >= 97 && c <= 122)
 {
 	result = 1;
 }
@@ -29,5 +35,5 @@ int _islower(int c)
 {
 	result = 0;
 }
-	return result;
+	return (result);
 }
