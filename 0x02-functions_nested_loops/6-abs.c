@@ -20,3 +20,17 @@ int main(void)
 	printf("%d\n", r);
 	return (0);
 }
+int _abs(int x)
+{
+	int result;
+if (x < 0)
+{	int w;
+	w=(-1*x);
+	result = w;
+}
+else
+{	
+	result = x;
+}
+	return result;
+}

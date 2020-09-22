@@ -14,3 +14,11 @@ int main(void)
 	printf("%d\n", n);
 	return (0);
 }
+int add(int w, int y)
+{
+	int z;
+	int result;
+	z = w + y;
+	result = z;
+	return result;
+}	

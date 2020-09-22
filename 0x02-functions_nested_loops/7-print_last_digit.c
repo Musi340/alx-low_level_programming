@@ -16,3 +16,24 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+int print_last_digit(int y)
+{
+	int f;
+	int g;
+	int result;
+	f = y % 10;
+	if (f < 0)
+	{
+	g = -1 * f;
+	result = g;
+	}
+	else if(f == 0)
+	{
+	result = f;
+	} 
+	else 
+	{
+	result = f;
+	} 
+	return result;
+}
