@@ -1,3 +1,4 @@
+
 #include <unistd.h>
 
 /**
@@ -34,23 +35,8 @@ void print_alphabet_x10(void)
 	_putchar('\n');
 }
 }
-int _islower(int c)
-{
-	int i;
-	int result;
-	for (i = 'a'; i <= 'z'; i++)
-{
-	if(c == i) 
-{
-	result = 1;
-}
-	else
-{
-	result = 0;
-}
-}
-	return result;
-}
+int _islower(int c);
+
 int print_sign(int n)
 {
 	int result;
@@ -112,11 +98,11 @@ void times_table(void)
 	int j;
 	int x;
 	
-	for(i = 0; i <= 9; i++)
+	for(i = 48; i <= 57; i++)
 {	
-	for(i = 0; i <= 9; j--)
+	for(j = 48; j <= 57; j++)
 {
-	x = i * j;
+	x = (i*j);
 	_putchar(x);
 }
 	_putchar('\n');
@@ -130,4 +116,39 @@ int add(int w, int y)
 	result = z;
 	return result;
 }	
-	
+void print_to_98(int n)
+{
+	int i;
+	int j;
+	if (n < 98)
+{
+	for(i = n; i <= 98; i++)
+{
+	_putchar(i);
+}
+}
+else if (n > 98)
+{
+	for(j = n; j >= 98; i--)
+{
+	_putchar(j);
+}
+}
+else 
+{
+	_putchar(98);
+}
+}
+int _isalpha(int c)
+{
+	int result;
+	if ((c >= 97 && c<= 122)||(c >= 65 && c<= 90))
+{
+	result = 1;
+}
+	else
+{
+	result = 0;
+}
+	return result;
+}

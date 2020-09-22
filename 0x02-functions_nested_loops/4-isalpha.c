@@ -20,16 +20,4 @@ int main(void)
     _putchar('\n');
     return (0);
 }
-int _isalpha(int c)
-{
-	char my_letters;
-	my_letters [27] = {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z};
 
-	if (c == )
-{
-	_putchar(1);
-}
-	else
-		_putchar(0);
-}	
-} 
