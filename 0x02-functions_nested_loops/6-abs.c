@@ -20,17 +20,23 @@ int main(void)
 	printf("%d\n", r);
 	return (0);
 }
+/**
+ *  _abs - prints absolute value
+ * @x: represents value
+ *
+ *Return: absolute valu
+ */
 int _abs(int x)
 {
 	int result;
 if (x < 0)
 {	int w;
-	w=(-1*x);
+	w = (-1 * x);
 	result = w;
 }
 else
-{	
+{
 	result = x;
 }
-	return result;
+	return (result);
 }

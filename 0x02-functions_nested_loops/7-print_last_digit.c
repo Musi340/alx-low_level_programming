@@ -16,24 +16,31 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+/**
+ *  print_last_digit - prints last digit
+ * @y: represents value
+ *
+ *Return: absolute valu
+ */
 int print_last_digit(int y)
 {
 	int f;
 	int g;
 	int result;
+
 	f = y % 10;
 	if (f < 0)
 	{
 	g = -1 * f;
 	result = g;
 	}
-	else if(f == 0)
+	else if (f == 0)
 	{
 	result = f;
-	} 
-	else 
+	}
+	else
 	{
 	result = f;
-	} 
-	return result;
+	}
+	return (result);
 }
