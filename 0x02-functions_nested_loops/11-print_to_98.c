@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 /**
  * print_to_98 - prints absolute value
@@ -14,19 +15,22 @@ void print_to_98(int n)
 {
 	for (i = n; i <= 98; i++)
 {
-	_putchar(i);
+	printf("%d", i);
 }
+	printf("\n");
 }
 else if (n > 98)
 {
 	for (j = n; j >= 98; j--)
 {
-	_putchar(j);
+	printf("%d", j);
 }
+	printf("\n");
 }
 else
 {
-	_putchar(98);
+	printf("%d", 98);
 }
+	printf("\n");
 }
 
