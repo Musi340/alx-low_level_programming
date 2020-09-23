@@ -12,13 +12,13 @@ void times_table(void)
 	int z;
 	int a;
 	int b;
-	
+
 	for (i = 0; i <= 9; i++)
 {
 	for (j = 0; j <= 9; j++)
 {
 	x = (i * j);
-	z = ('0'+ x);
+	z = ('0' +  x);
 
 	if (z <= '9')
 {
@@ -32,10 +32,10 @@ void times_table(void)
 	else
 {
 	a = (x % 10);
-	b = (x- a)/10;
+	b = (x - a) / 10;
 
-	_putchar('0'+ b);
-	_putchar('0'+ a);
+	_putchar('0' +  b);
+	_putchar('0' +  a);
 	if (j < 9)
 {
 	_putchar(',');
