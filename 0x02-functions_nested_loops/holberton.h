@@ -23,5 +23,7 @@ void print_to_98(int n);
 
 int _isalpha(int c);
 
+void jack_bauer(void);
+
 #endif /* HOLBERTON_H */
 

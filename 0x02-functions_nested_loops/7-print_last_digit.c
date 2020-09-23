@@ -17,7 +17,7 @@ int print_last_digit(int y)
 	g = ((-1) * f);
 	result = g;
 }
-else
+	else
 {
 	result = f;
 }
