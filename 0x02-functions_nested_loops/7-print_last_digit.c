@@ -20,7 +20,7 @@ int main(void)
  *  print_last_digit - prints last digit
  * @y: represents value
  *
- *Return: absolute valu
+ *Return: absolute value
  */
 int print_last_digit(int y)
 {
@@ -31,12 +31,8 @@ int print_last_digit(int y)
 	f = y % 10;
 	if (f < 0)
 	{
-	g = -1 * f;
+	g = (-1) * f;
 	result = g;
-	}
-	else if (f == 0)
-	{
-	result = f;
 	}
 	else
 	{
