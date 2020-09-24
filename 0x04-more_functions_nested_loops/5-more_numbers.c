@@ -21,10 +21,8 @@ void more_numbers(void)
 				z =  a;
 				_putchar('1');
 			}
-			
-			_putchar('0' + z);
-			
-		}
+	_putchar('0' + z);
+	}
 		_putchar('\n');
 	}
 }
