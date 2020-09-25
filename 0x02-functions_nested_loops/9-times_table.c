@@ -9,7 +9,6 @@ void times_table(void)
 	int i;
 	int j;
 	int x;
-	//int z;
 	int a;
 	int b;
 
@@ -22,8 +21,7 @@ void times_table(void)
 			{
 				a = (x % 10);
 				b = (x / 10);
-				
-				if (j != 0 && j <= 9)
+			if (j != 0 && j <= 9)
 				{
 				_putchar(',');
 				_putchar(' ');
@@ -33,7 +31,6 @@ void times_table(void)
 			}
 			else
 			{
-				
 				if (j != 0 && j <= 9)
 				{
 				_putchar(',');
