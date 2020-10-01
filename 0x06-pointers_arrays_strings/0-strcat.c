@@ -2,10 +2,10 @@
 #include "holberton.h"
 /**
  * *_strcat - check the code for Holberton School students.
- * @*dest: String to be appended to 
- * @*src: string to be appended
+ * @dest: String to be appended to
+ * @src: string to be appended
  *
- * Return: returns dest pointer 
+ * Return: returns dest pointer
  */
 char *_strcat(char *dest, char *src)
 {
@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src)
 	for (i = 0; dest[i] != '\0'; i++)
 	{
 	}
-	for (j = 0; src[j] != '\0'; j++,i++)
+	for (j = 0; src[j] != '\0'; j++, i++)
 	{
 		dest[i] = src[j];
 	}
