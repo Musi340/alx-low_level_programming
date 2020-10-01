@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * *_strcat - check the code for Holberton School students.
+ * _strncat - check the code for Holberton School students.
  * @dest: String to be appended to
  * @src: string to be appended
  * @n: bytes to be considered
