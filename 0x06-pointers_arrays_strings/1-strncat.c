@@ -22,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 		if (j * k <= n)
 		dest[i] = src[j];
 	}
-	if (j * k < n)
+	if (j * k <= n)
 	{
 	dest[i] = '\0';
 	}
