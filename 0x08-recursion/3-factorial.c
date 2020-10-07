@@ -11,7 +11,7 @@ int factorial(int n)
 
 	if (n == 0)
 	{
-	result = 0;
+	result = 1;
 	}
 	else if (n < 0)
 	{
