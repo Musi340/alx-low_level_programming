@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - prints name of file
  * @argc:number of command line arguments
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		for (int i = 1; i < argc; i++)
 		{
-			if (isdigit(atoi(argv[i])))
+			if ((atoi(argv[i])))
 			{	
 				sum += atoi(argv[i]);
 			}
