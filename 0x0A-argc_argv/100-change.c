@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	int k;
 	int mycents[6] = {25, 10, 5, 2, 1};
 	int sum;
+	int i;
 
 	sum = 0;
 	if (argc == 1)
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
 	else
 	{
 	k = atoi(argv[1]);
-		for (int i = 0; i < 5; i++)
+		for (i = 0; i < 5; i++)
 		{
 			x = k / mycents[i];
 			sum += x;
