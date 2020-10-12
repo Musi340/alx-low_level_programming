@@ -1,4 +1,3 @@
-#include <stdio.h>
 /**
 * _strchr - locates a character to a string
 * @s: string to be checked
@@ -8,18 +7,16 @@
 */
 char *_strchr(char *s, char c)
 {
-	int i;
 	int j;
+	char *p;
 
 	for (j = 0; s[j] != '\0'; j++)
 	{
+		if (s[j] == c)
+		{
+		p = &s[j];
+		return (p);
+		}
 	}
-	for (i = 0; i < j; i++)
-	{
-	if (s[i] == c)
-	{
-	return (s + i);
-	}
-	}
-	return (NULL);
+	return (0);
 }
