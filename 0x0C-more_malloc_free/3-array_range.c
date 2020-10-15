@@ -19,7 +19,7 @@ int *array_range(int min, int max)
 	ptr = malloc(myarray * sizeof (int));
 	if (ptr == 0)
 	return (0);
-	for (i = 0, k; i < myarray; i++, k++)
+	for (i = 0, k = min; i < myarray; i++, k++)
 	{
 		ptr[i] = k;
 	}
