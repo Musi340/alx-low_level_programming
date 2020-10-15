@@ -10,16 +10,16 @@ char *_strdup(char *str)
 	char *ptr;
 	int i;
 
-	if (*str = NULL)
+	if (*str == 0)
 	{
-		return (NULL);
+		return (0);
 	}
 	for (i = 0; str[i] != '\0'; i++)
 	{
 	}
 	ptr = malloc((i + 1) * sizeof(char));
-	if (ptr = NULL)
-	return (NULL);
+	if (ptr == 0)
+	return (0);
 	for (i = 0; str[i] != '\0'; i++)
 	{
 	ptr[i] = str[i];
