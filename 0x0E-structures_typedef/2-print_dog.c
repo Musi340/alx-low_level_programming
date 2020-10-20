@@ -15,10 +15,6 @@ void print_dog(struct dog *d)
 	{
 		(*d).name = "(nil)";
 	}
-	if ((*d).age == 0)
-	{
-		(*d).age = "(nil)";
-	}
 	if ((*d).owner == 0)
 	{
 		(*d).owner = "(nil)";
