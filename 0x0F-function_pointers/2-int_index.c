@@ -1,6 +1,7 @@
 /**
  * int_index - function that searches for an integer
- * @size: number of elements in the array 
+ * @array: the array
+ * @size: number of elements in the array
  * @cmp: - pointer to function that compares values
  *
  * Return: - returns the index of the first element
