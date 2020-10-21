@@ -17,12 +17,13 @@ op_t ops[] = {
 	{NULL, NULL}
 	};
 	int i;
+
 	i = 0;
-	while(ops[i].op != NULL)
+	while (ops[i].op != NULL)
 	{
 	if (*s == *(ops[i].op))
 	break;
 	i++;
 	}
 	return (ops[i].f);
-}	
+}
