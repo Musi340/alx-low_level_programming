@@ -6,9 +6,11 @@
  *
  */
 void free_list(list_t *head)
-while ((*head)->next != NULL)
 {
+	while ((*head)->next != NULL)
+	{
+		free(*head);
+		*head = (*head)->next;
+	}
 	free(*head);
-	*head = (*head)->next;
 }
-free(*head);
