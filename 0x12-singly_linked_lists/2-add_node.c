@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 /**
  * add_node - adds a node at the start of a list
@@ -23,13 +24,11 @@ list_t *add_node(list_t **head, const char *str)
 	{
 	return (NULL);
 	}
-	if (str == NULL)
-	return (NULL);
 	for (i = 0; str[i] != '\0'; ++i)
 	{
 	}
 	temp->len = i;
-	temp->str = ((char *)str);
+	temp->str = strdup(str);
 	temp->next = *head;
 	*head = temp;
 	return (temp);
