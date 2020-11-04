@@ -7,7 +7,7 @@
  * @idx: index node is to be inserted
  * @n: data of the node
  *
- * Return: sum or 0 if list is empty
+ * Return: new node or NULL if it fails
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
