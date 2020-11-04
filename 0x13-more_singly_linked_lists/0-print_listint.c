@@ -15,8 +15,8 @@ size_t print_listint(const listint_t *h)
 	return (0);
 	else
 	{
-	i = 0;	
-	while(h != NULL)
+	i = 0;
+	while (h != NULL)
 	{
 	printf("%u\n", h->n);
 	i = i + 1;
