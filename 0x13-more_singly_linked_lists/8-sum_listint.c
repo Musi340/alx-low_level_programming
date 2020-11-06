@@ -20,7 +20,7 @@ int sum_listint(listint_t *head)
 	else
 	{
 	tmp = head;
-	while(tmp != NULL)
+	while (tmp != NULL)
 	{
 	sum += tmp->n;
 	tmp = tmp->next;
