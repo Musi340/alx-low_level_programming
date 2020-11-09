@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 /**
  * main - prints name of file
@@ -11,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int sum;
 	int i;
+	int j;
 
 	sum = 0;
 	if (argc == 1)
@@ -21,14 +23,25 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if ((atoi(argv[i])))
+			for (j = 0; argv[i][j] != '\0'; j++)
+			{
+				if (isdigit(argv[i][j]) == 0)
+				{
+				printf("Error\n");
+				return (1);
+				}
+			}
+		}
+		for (i = 1; i < argc; i++)
+		{
+			if (atoi(argv[i]))
 			{
 			sum += atoi(argv[i]);
 			}
 			else
 			{
-				printf("Error\n");
-				return (1);
+			printf("Error\n");
+			return (1);
 			}
 		}
 		printf("%d\n", sum);
