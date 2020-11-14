@@ -52,12 +52,12 @@ unsigned int binary_to_uint(const char *b)
 	i--;
 	while (i >= 0)
 	{
-		if (b[i] == 49)
+		if (b[i] == '1')
 		{
 			power = my_power(2, count);
 			sum += power;
 		}
-		else if (b[i] != 48)
+		else if (b[i] != '0')
 		{
 			return (0);
 		}
