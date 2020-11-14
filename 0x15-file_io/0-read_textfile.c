@@ -16,20 +16,39 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int k;
 	char *b;
-	size_t m;
+	int m;
 	int n;
 
-	b = malloc(letters + 1 * sizeof(char));
 	if (filename == 0)
+	return (0);
+	b = malloc(letters + 1 * sizeof(char));
+	if (b == 0)
 	return (0);
 	k = open(filename, O_RDWR);
 	if (k == -1)
+	{
+	free(b);
 	return (0);
+	}
 	/*reads letters from k to b*/
 	m = read(k, b, letters);
+	if (m == -1)
+	{
+	free(b);
+	return (0);
+	}
 	/*writes m from b to 1*/
 	n = write(1, b, m);
 	if (n == -1)
+	{
+	free(b);
 	return (0);
+	}
+	if (m != n)
+	{
+	free(b);
+	return (0);
+	}
+	close(k);
 	return (n);
 }
