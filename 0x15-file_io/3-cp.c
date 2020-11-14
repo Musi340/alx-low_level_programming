@@ -18,6 +18,7 @@ int main(int ac, char **argv)
 	int k, j, c, d, l, n;
 	char m[1024];
 	/*Checks number of arguments*/
+	d = 1;
 	if (ac != 3)
 	{
 	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -27,27 +28,30 @@ int main(int ac, char **argv)
 	if (k == -1)
 	{
 	dprintf(STDERR_FILENO, "Can't read from  %s\n", argv[1]);
-	exit(98);
+	exit(99);
 	}
 	c = open(argv[1], O_RDWR);
 	if (c == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-	exit(99);
-	}
-	d = read(c, m, 1024);
-	/*Checks whether filefrom can be read*/
-	if (d == -1 || d != 1024)
-	{
-	dprintf(STDERR_FILENO, "Can't read from  %s\n", argv[1]);
 	exit(98);
 	}
-	j = write(k, m, 1024);
-	/*Checks whether fileto can be written*/
-	if (j == -1 || j != 1024)
+	while (d > 0)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-	exit(99);
+		d = read(c, m, 1024);
+		/*Checks whether filefrom can be read*/
+		if (d == -1)
+		{
+		dprintf(STDERR_FILENO, "Can't read from  %s\n", argv[1]);
+		exit(98);
+		}
+		j = write(k, m, d);
+		/*Checks whether fileto can be written*/
+		if (j == -1 || j != d)
+		{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+		}
 	}
 	l = close(k);
 	if (l == -1)
@@ -55,7 +59,7 @@ int main(int ac, char **argv)
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", k);
 	exit(100);
 	}
-	n = close(k);
+	n = close(c);
 	if (n == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", k);
