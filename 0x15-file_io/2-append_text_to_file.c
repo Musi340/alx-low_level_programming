@@ -21,16 +21,18 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (filename == 0)
 	return (-1);
-	k = open(filename, O_RDWR | O_APPEND | O_CREAT, 0600);
+	k = open(filename, O_RDWR | O_APPEND, 0600);
 	if (k == -1)
 	return (-1);
-	/*writes from text_content to 1*/
-	m = strlen(text_content);
-	if (m > 0)
+	if (text_content == 0)
 	{
-		n = write(k, text_content, m);
-		if (n == -1)
-		return (-1);
+		return (1);
 	}
+	/*writes from text_content to k*/
+	m = strlen(text_content);
+	n = write(k, text_content, m);
+	if (n == -1)
+	return (-1);
+	close(k);
 	return (1);
 }
