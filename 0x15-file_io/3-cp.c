@@ -20,7 +20,7 @@ int main(int ac, char **argv)
 	/*Checks number of arguments*/
 	if (ac != 3)
 	{
-	dprintf(2, "Usage: cp file_from file_to\n");
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 	exit(97);
 	}
 	if (argv[1] == 0 || argv[2] == 0)
@@ -28,7 +28,7 @@ int main(int ac, char **argv)
 	m = malloc(1024 * sizeof(char));
 	if (m == 0)
 	return (0);
-	k = open(argv[2], O_RDWR | O_APPEND, 0664);
+	k = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 	c = open(argv[1], O_RDWR);
 	d = read(c, m, 1024);
 	/*Checks whether filefrom can be read*/
