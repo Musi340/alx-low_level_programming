@@ -24,11 +24,15 @@ int create_file(const char *filename, char *text_content)
 	k = open(filename, O_RDWR | O_TRUNC | O_CREAT, 0600);
 	if (k == -1)
 	return (-1);
+	if (text_content == 0)
+	{
+		return (1);
+	}
 	/*writes from text_content to k*/
 	m = strlen(text_content);
 	n = write(k, text_content, m);
+	close(k);
 	if (n == -1)
 	return (-1);
-	close(k);
 	return (1);
 }
