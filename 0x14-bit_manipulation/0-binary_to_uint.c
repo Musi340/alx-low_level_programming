@@ -14,7 +14,7 @@ int my_power(int my_base, int my_exponent)
 
 	if (my_exponent < 0)
 	{
-		return (0);
+		return (-1);
 	}
 	if (my_exponent == 0)
 	{
