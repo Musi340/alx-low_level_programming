@@ -34,9 +34,9 @@ int my_power(int my_base, int my_exponent)
 unsigned int binary_to_uint(const char *b)
 {
 	int i;
-	int power;
+	unsigned int power;
 	int count;
-	int sum;
+	unsigned int sum;
 
 	i = 0;
 	count = 0;
