@@ -27,7 +27,6 @@ int main(int ac, char **argv)
 	if (k == -1)
 	{
 	dprintf(STDERR_FILENO, "Can't read from  %s\n", argv[1]);
-	free(m);
 	exit(98);
 	}
 	c = open(argv[1], O_RDWR);
