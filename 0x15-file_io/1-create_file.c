@@ -31,8 +31,8 @@ int create_file(const char *filename, char *text_content)
 	/*writes from text_content to k*/
 	m = strlen(text_content);
 	n = write(k, text_content, m);
-	close(k);
 	if (n == -1)
 	return (-1);
+	close(k);
 	return (1);
 }
