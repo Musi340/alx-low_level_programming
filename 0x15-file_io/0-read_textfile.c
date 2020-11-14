@@ -10,7 +10,7 @@
  * @filename: file to be read from
  * @letters: NUmner of characters to be read
  *
- * Return: Always 0.
+ * Return: number of characters written.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	b = malloc(letters + 1 * sizeof(char));
 	if (filename == 0)
 	return (0);
-	k = open(filename, O_RDONLY);
+	k = open(filename, O_RDWR);
 	if (k == -1)
 	return (0);
 	/*reads letters from k to b*/
