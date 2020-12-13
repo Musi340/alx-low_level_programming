@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- * print_dlistint - returns the number of elements in a list
+ * dlistint_len - returns the number of elements in a list
  * @h: the list
  *
  * Return: number of nodes
